@@ -12,7 +12,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "inventory": {
+      "type": "belongsTo",
+      "model": "inventory",
+      "foreignKey": "inventoryId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
@@ -23,7 +29,7 @@
     {
       "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$authenticated",
+      "principalId": "$owner",
       "permission": "ALLOW"
     }
   ],

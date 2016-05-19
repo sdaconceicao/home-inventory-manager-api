@@ -3,8 +3,10 @@
     "sources": [
       "../common/models",
       "./models"
-    ]
+    ],
+    "mixins": ["../common/mixins"]
   },
+
   "User": {
     "dataSource": "db",
     "public": false
@@ -30,6 +32,10 @@
     "public": true
   },
   "user": {
+    "dataSource": "mongoDB",
+    "public": true
+  },
+  "inventory": {
     "dataSource": "mongoDB",
     "public": true
   }

@@ -1,5 +1,5 @@
 {
-  "name": "inventory",
+  "name": "category",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -13,22 +13,16 @@
   },
   "validations": [],
   "relations": {
-    "user": {
+    "inventory": {
       "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "userId"
+      "model": "inventory",
+      "foreignKey": "inventoryId"
     },
     "items": {
       "type": "hasMany",
       "model": "item",
-      "foreignKey": "inventoryId"
-    },
-    "categories": {
-      "type": "hasMany",
-      "model": "category",
-      "foreignKey": "inventoryId"
+      "foreignKey": "categoryId"
     }
-
   },
   "acls": [
     {

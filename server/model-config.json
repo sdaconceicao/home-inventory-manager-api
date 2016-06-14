@@ -38,5 +38,9 @@
   "inventory": {
     "dataSource": "mongoDB",
     "public": true
+  },
+  "category": {
+    "dataSource": "mongoDB",
+    "public": true
   }
 }
